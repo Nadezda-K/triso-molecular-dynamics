@@ -2,11 +2,11 @@
 
 Python analysis of irradiation-induced structural changes at the interface between the porous buffer and inner pyrocarbon (IPyC) coating of TRISO nuclear fuel. The project connects atomistic simulations with quantitative measures of material damage, using a system containing 4,609,421 atoms.
 
-The repository contains research notebooks, post-processing scripts, simulation outputs, and the accompanying paper. It demonstrates scientific computing and data analysis workflows for turning large atomic-coordinate datasets into interpretable spatial profiles, structural features, and publication figures.
+The repository contains research notebooks, post-processing scripts for turning large atomic-coordinate datasets into interpretable spatial profiles, structural features.
 
 ## Research context
 
-TRISO fuel particles use multiple coating layers to retain fission products. Changes at the buffer–IPyC interface can influence the integrity of these coatings during irradiation.
+TRISO fuel particles use multiple coating layers to retain fission products. Changes at the buffer-IPyC interface can influence the integrity of these coatings during irradiation.
 
 The study uses LAMMPS molecular dynamics simulations of successive collision cascades to investigate how radiation damage accumulates. The porous buffer is represented by randomly oriented graphitic spheres, while the IPyC region is approximated by a graphite grain. The simulation protocol combines cascade evolution with relaxation at controlled temperature and pressure.
 
@@ -20,7 +20,7 @@ Analysis focuses on:
 
 ## Main findings
 
-The accompanying paper reports buffer densification, graphite expansion perpendicular to its sheets, contraction within the sheets, and sheet buckling associated with radiation-induced cross-linking. Defects and structural disorder increase with irradiation, with more pronounced degradation near the interface than deeper within the graphite region. These trends help interpret published experimental observations of the buffer–IPyC interface.
+The accompanying paper reports buffer densification, graphite expansion perpendicular to its sheets, contraction within the sheets, and sheet buckling associated with radiation-induced cross-linking. Defects and structural disorder increase with irradiation, with more pronounced degradation near the interface than deeper within the graphite region. These trends help interpret published experimental observations of the buffer-IPyC interface.
 
 ## Data analysis workflow
 
@@ -36,14 +36,11 @@ The accompanying paper reports buffer densification, graphite expansion perpendi
 | --- | --- |
 | `code_defects_vs_z_srinking.py` | Defect aggregation using separate layer partitions for the buffer and graphite regions. |
 | `code_defects_vs_z_srinking_2.py` | Defect aggregation using a fixed number of layers across the changing simulation cell. |
-| `a_defects_npt.ipynb` | Initial defect-profile analysis and visualization. |
-| `a_defects_npt_shrinking.ipynb` | Defect, density, and interface analysis accounting for cell deformation. |
 | `a_defects_npt_shrinking_redoing_selected_figures.ipynb` | Revised selected figures and structural similarity visualizations. |
 | `a_bonds_npt_shrinking_part_1_data.ipynb` | Extraction of local bond geometry using KD-tree neighbor searches. |
 | `a_bonds_npt_shrinking_part_2.ipynb` | Bond-length statistics and plots. |
 | `a_bonds_npt_shrinking_part_3_angles.ipynb` | Bond-angle calculations, statistics, and plots. |
 | `a_dpa_npt.ipynb` | Recoil-spectrum analysis and accumulated radiation-dose calculations. |
-| `a_traject_npt.ipynb` | Parsing and preparation of atomic trajectory data. |
 | `simulations_parameters_1-623_npt_aniso*.dat` | Simulation metadata used for dose and recoil analysis. |
 | `recspec.out` | Recoil-spectrum data. |
 
