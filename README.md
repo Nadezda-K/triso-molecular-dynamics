@@ -1,6 +1,6 @@
 # Radiation Damage in TRISO Fuel: Molecular Simulation and Data Analysis
 
-Python analysis of irradiation-induced structural changes at the interface between the porous buffer and inner pyrocarbon (IPyC) coating of TRISO nuclear fuel. The project connects atomistic simulations with quantitative measures of material damage, using a system containing **4,609,421 atoms**.
+Python analysis of irradiation-induced structural changes at the interface between the porous buffer and inner pyrocarbon (IPyC) coating of TRISO nuclear fuel. The project connects atomistic simulations with quantitative measures of material damage, using a system containing 4,609,421 atoms.
 
 The repository contains research notebooks, post-processing scripts, simulation outputs, and the accompanying paper. It demonstrates scientific computing and data analysis workflows for turning large atomic-coordinate datasets into interpretable spatial profiles, structural features, and publication figures.
 
@@ -60,19 +60,3 @@ Outputs contain layer boundaries, atom counts, coordination-based defect counts,
 N. Korepanova, Z. M. Krajewska-Travar, and A. E. Sand. **Simulation of the buffer-IPyC interface cell from the TRISO nuclear fuel with LAMMPS.** *Nuclear Instruments and Methods in Physics Research Section B*, **570** (2026), 165916.
 
 [Read the publication](https://doi.org/10.1016/j.nimb.2025.165916) · [Research data](https://doi.org/10.5281/zenodo.14930110)
-
-```bibtex
-@article{Korepanova2026TRISO,
-  title = {Simulation of the buffer-IPyC interface cell from the TRISO nuclear fuel with LAMMPS},
-  author = {Korepanova, N. and Krajewska-Travar, Z. M. and Sand, A. E.},
-  journal = {Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms},
-  volume = {570},
-  pages = {165916},
-  year = {2026},
-  doi = {10.1016/j.nimb.2025.165916}
-}
-```
-
-## License
-
-No code license is currently included in this repository. The accompanying article is published under CC BY 4.0; that license does not automatically establish the licensing terms for the repository's code or datasets.
